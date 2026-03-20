@@ -5,5 +5,7 @@ description: >-
 ---
 
 # Autonomous Navigation
-
-{% embed url="https://youtube.com/playlist?list=PLn8PRpmsu08rLRGrnF-S6TyGrmcA2X7kg&si=xhafhBTHeuKOTgAC" %}
+<iframe width="560" height="315"
+src="https://youtube.com/playlist?list=PLn8PRpmsu08rLRGrnF-S6TyGrmcA2X7kg&si=xhafhBTHeuKOTgAC"
+frameborder="0"
+allowfullscreen></iframe>
