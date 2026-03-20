@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerial Robotics Society - IIT Madras</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 300px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            overflow-y: auto;
+            border-right: 1px solid #e9ecef;
+        }
+        .sidebar h2 {
+            font-size: 18px;
+            margin-top: 0;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin: 5px 0;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #007bff;
+            display: block;
+            padding: 5px 0;
+        }
+        .sidebar a:hover {
+            background-color: #e9ecef;
+            padding-left: 10px;
+        }
+        .sidebar .subsection {
+            margin-left: 20px;
+            font-size: 14px;
+        }
+        .main {
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto;
+        }
+        .cover {
+            background-image: url('https://images.unsplash.com/photo-1556388158-158ea5ccacbd?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw5fHxhaXJjcmFmdHxlbnwwfHx8fDE3MzgxNDMxNDV8MA&ixlib=rb-4.0.3&q=85');
+            background-size: cover;
+            background-position: center 89%;
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        .club-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .markdown-content {
+            /* Additional styles for rendered Markdown */
+        }
+        .markdown-content h1, .markdown-content h2, .markdown-content h3 {
+            color: #333;
+        }
+        .markdown-content code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .markdown-content pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="page.html?file=README.md">Introduction</a></li>
+            <li>
+                <a href="page.html?file=concepts/README.md">Concepts</a>
+                <ul class="subsection">
+                    <li><a href="page.html?file=concepts/euler-angles.md">Euler Angles</a></li>
+                    <li><a href="page.html?file=concepts/quaternions.md">Quaternions</a></li>
+                    <li><a href="page.html?file=concepts/kalman-filters.md">Kalman Filters</a></li>
+                    <li><a href="page.html?file=concepts/sensor-fusion.md">Sensor Fusion</a></li>
+                    <li><a href="page.html?file=concepts/pid-controls.md">PID Controls</a></li>
+                    <li><a href="page.html?file=concepts/autonomous-navigation.md">Autonomous Navigation</a></li>
+                </ul>
+            </li>
+            <li><a href="page.html?file=control-systems.md">Control Systems</a></li>
+            <li>
+                <a href="page.html?file=estimation/README.md">Estimation</a>
+                <ul class="subsection">
+                    <li><a href="page.html?file=estimation/visual-inertial-odometry-vio.md">Visual Inertial Odometry (VIO)</a></li>
+                    <li><a href="page.html?file=estimation/ekf.md">EKF</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="page.html?file=path-planning/README.md">Path Planning</a>
+                <ul class="subsection">
+                    <li><a href="page.html?file=path-planning/dijkstras-algorithm.md">Dijkstra's algorithm</a></li>
+                    <li><a href="page.html?file=path-planning/rapidly-exploring-random-tree-rrt.md">Rapidly exploring random tree (RRT)</a></li>
+                    <li><a href="page.html?file=path-planning/a-search-algorithm.md">A* search algorithm</a></li>
+                    <li><a href="page.html?file=path-planning/particle-swarm-optimization.md">Particle swarm optimization</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="page.html?file=computer-vision/README.md">Computer Vision</a>
+                <ul class="subsection">
+                    <li><a href="page.html?file=computer-vision/aruco-tags.md">Aruco Tags</a></li>
+                    <li><a href="page.html?file=computer-vision/april-tags.md">April Tags</a></li>
+                </ul>
+            </li>
+            <li><a href="page.html?file=machine-learning.md">Machine Learning</a></li>
+            <li>
+                <a href="page.html?file=hardware-integration/README.md">Hardware Integration</a>
+                <ul class="subsection">
+                    <li><a href="page.html?file=hardware-integration/sik-telemetry-radio.md">SiK Telemetry Radio</a></li>
+                    <li><a href="page.html?file=hardware-integration/configuring-radio-telemetry.md">Configuring Radio Telemetry</a></li>
+                    <li>
+                        <a href="page.html?file=hardware-integration/offboard-mission/README.md">Offboard Mission</a>
+                        <ul class="subsection">
+                            <li><a href="page.html?file=hardware-integration/offboard-mission/setting-up-the-companion-computer/README.md">Setting up the Companion Computer</a></li>
+                            <li><a href="page.html?file=hardware-integration/offboard-mission/communication-setup.md">Communication Setup</a></li>
+                            <li><a href="page.html?file=hardware-integration/offboard-mission/guided-mode-or-ardupilot.md">Guided Mode | Ardupilot</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page.html?file=hardware-integration/osd-or-ardupilot/README.md">OSD | Ardupilot</a></li>
+                    <li><a href="page.html?file=hardware-integration/using-an-airspeed-sensor-or-ardupilot.md">Using an Airspeed Sensor | Ardupilot</a></li>
+                    <li><a href="page.html?file=hardware-integration/px4flow-optical-flow-camera-board.md">PX4FLOW Optical Flow Camera Board</a></li>
+                    <li><a href="page.html?file=hardware-integration/grippers-or-ardupilot/README.md">Grippers | Ardupilot</a></li>
+                    <li><a href="page.html?file=hardware-integration/landing-gear-retractable-camera-mount.md">Landing Gear/ Retractable Camera Mount</a></li>
+                    <li><a href="page.html?file=hardware-integration/internal-combustion-engines-ice.md">Internal Combustion Engines (ICE)</a></li>
+                    <li><a href="page.html?file=hardware-integration/winch.md">Winch</a></li>
+                    <li><a href="page.html?file=hardware-integration/relay-switch.md">Relay Switch</a></li>
+                    <li><a href="page.html?file=hardware-integration/temperature-sensors.md">Temperature Sensors</a></li>
+                    <li><a href="page.html?file=hardware-integration/servos.md">Servos</a></li>
+                    <li><a href="page.html?file=hardware-integration/depth-camera.md">Depth Camera</a></li>
+                    <li><a href="page.html?file=hardware-integration/tracking-camera.md">Tracking Camera</a></li>
+                    <li><a href="page.html?file=hardware-integration/ultra-wideband-uwb-transceiver-for-non-gps-navigation.md">Ultra-wideband (UWB) transceiver for Non-GPS Navigation</a></li>
+                    <li><a href="page.html?file=hardware-integration/elrs-with-ardupilot.md">ELRS with Ardupilot</a></li>
+                </ul>
+            </li>
+            <li><a href="page.html?file=about-us.md">About Us</a></li>
+            <li><a href="page.html?file=drone-apis/README.md">Drone APIs</a></li>
+            <li><a href="page.html?file=lua-scripts/README.md">Lua Scripts</a></li>
+            <li><a href="page.html?file=mavlink/README.md">MAVLink</a></li>
+            <li><a href="page.html?file=resources/README.md">Resources</a></li>
+            <li><a href="page.html?file=advanced/README.md">Advanced</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div id="content" class="markdown-content">
+            <!-- Content will be loaded here -->
+        </div>
+    </div>
+    <script src="marked.min.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const file = urlParams.get('file');
+        if (file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(text => {
+                    // Remove frontmatter if present
+                    const cleanedText = text.replace(/^---[\s\S]*?---\n/, '');
+                    document.getElementById('content').innerHTML = marked.parse(cleanedText);
+                })
+                .catch(error => {
+                    document.getElementById('content').innerHTML = '<p>Error loading content.</p>';
+                });
+        } else {
+            document.getElementById('content').innerHTML = '<p>No file specified.</p>';
+        }
+    </script>
+</body>
+</html>
